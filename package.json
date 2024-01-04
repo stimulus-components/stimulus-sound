@@ -1,0 +1,58 @@
+{
+  "name": "stimulus-sound",
+  "version": "0.0.0",
+  "description": "A Stimulus Controller to play and control sound.",
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "stimulus controller",
+    "audio",
+    "sound"
+  ],
+  "repository": "git@github.com:stimulus-components/stimulus-sound.git",
+  "bugs": {
+    "url": "https://github.com/stimulus-components/stimulus-sound/issues"
+  },
+  "author": "Guillaume Briday <guillaumebriday@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/stimulus-components/stimulus-sound",
+  "private": false,
+  "main": "dist/stimulus-sound.umd.js",
+  "module": "dist/stimulus-sound.mjs",
+  "scripts": {
+    "lint": "eslint --ext .js,.mjs,.ts . && prettier . --check",
+    "lintfix": "eslint --ext .js,.mjs,.ts . --fix && prettier . --write",
+    "dev": "vite",
+    "prod": "vite build --mode netlify",
+    "build": "tsc --noEmit && vite build",
+    "version": "yarn build",
+    "np": "np --no-2fa --no-tests"
+  },
+  "devDependencies": {
+    "@babel/core": "7.23.7",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.23.7",
+    "@babel/preset-typescript": "7.23.3",
+    "@hotwired/stimulus": "3.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "autoprefixer": "10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "16.6.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-standard": "5.0.0",
+    "np": "9.2.0",
+    "postcss": "8.4.32",
+    "prettier": "3.1.1",
+    "tailwindcss": "3.4.0",
+    "typescript": "^5.3.3",
+    "vite": "5.0.10"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": "3.2.1"
+  }
+}
