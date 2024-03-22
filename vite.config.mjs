@@ -1,12 +1,15 @@
-import { resolve } from "path";
-import { defineConfig } from "vite";
+import { resolve } from "path"
+import { defineConfig } from "vite"
 
 export default defineConfig(({ mode }) => {
   if (mode === "netlify") {
-    return {};
+    return {}
   }
 
   return {
+    esbuild: {
+      minifyIdentifiers: false,
+    },
     build: {
       lib: {
         entry: resolve(__dirname, "src/index.ts"),
@@ -22,5 +25,5 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-  };
-});
+  }
+})

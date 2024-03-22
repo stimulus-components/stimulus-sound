@@ -7,8 +7,9 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
+    jest: true,
   },
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: ["standard", "prettier"],
   plugins: ["@typescript-eslint"],
-};
+}
