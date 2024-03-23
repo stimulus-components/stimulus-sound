@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-export default class extends Controller {
+export default class Sound extends Controller {
   declare readonly urlValue: string
   declare sound: HTMLAudioElement
 
