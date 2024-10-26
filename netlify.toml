@@ -1,9 +1,0 @@
-[build]
-  publish="dist"
-  command="yarn prod"
-
-[[redirects]]
-  from = "https://stimulus-sound.netlify.app/*"
-  to = "https://stimulus-sound.stimulus-components.com/:splat"
-  status = 301
-  force = true
